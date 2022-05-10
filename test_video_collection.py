@@ -34,6 +34,8 @@ class TestVideoCollection:
         click('//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[1]', by=DriverType.UI, timeout=10)
         time.sleep(3)
 
+    
+    @pytest.mark.run(order=1)
     def test_live(self):
         click('//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.ImageButton', by=DriverType.UI, timeout=20)
         time.sleep(2)
