@@ -1,8 +1,6 @@
 # -*- coding: UTF-8 -*-
-try:
-    from uitrace.api import *
-except:
-    print("cannot import module uitrace.api")
+from uitrace.api import *
+import pytest
 
 class TestVideoCollection:
     @classmethod
